@@ -1,6 +1,8 @@
 from utils import *
 from minmax import minimax
 
+test = True
+
 # Initialize grid with coordinates
 my_grid = [
     ["1", "2", "3"],
