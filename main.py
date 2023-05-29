@@ -1,7 +1,7 @@
 from utils import *
 from minmax import minimax
 
-
+changes_to_check_pre_commit = True
 
 # Initialize grid with coordinates
 my_grid = [
