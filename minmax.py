@@ -4,13 +4,11 @@ from utils import *
 
 
 def minimax(input_grid: list, is_maximizing: bool) -> list:
-    """
-    Minmax algorithm - recursively evaluates all possible variation nodes and chooses the best one
+    """Minmax algorithm - recursively evaluates all possible variation nodes and chooses the best one
     :param input_grid: current grid
     :param is_maximizing: whether maximize or minimize
     :return: list of best move parameters, first element is the best possible evaluating score,
-     second element is the best move coordinate
-    """
+     second element is the best move coordinate"""
     # Base case - the game is over, so return the value of the grid
     if game_is_over(input_grid):
         return [evaluate_grid(input_grid), ""]
