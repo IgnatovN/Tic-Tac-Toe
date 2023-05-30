@@ -1,5 +1,6 @@
-from utils import *
 from copy import deepcopy
+
+from utils import *
 
 
 def minimax(input_grid: list, is_maximizing: bool) -> list:

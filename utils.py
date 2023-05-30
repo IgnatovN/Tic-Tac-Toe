@@ -4,7 +4,8 @@ def print_grid(grid: list) -> None:
     :param grid: list of grid actual values
     :return: none, grid print during the function running
     """
-    print(f"""
+    print(
+        f"""
     |-------------|
     | Tic Tac Toe |
     |-------------|
@@ -16,7 +17,8 @@ def print_grid(grid: list) -> None:
     |  {grid[2][0]} | {grid[2][1]} | {grid[2][2]}  |
     |             |
     |-------------|
-    """)
+    """
+    )
 
 
 def select_space(grid: list, move: int, turn: str) -> bool:
