@@ -1,7 +1,5 @@
-from utils import *
 from minmax import minimax
-
-
+from utils import *
 
 # Initialize grid with coordinates
 my_grid = [["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"]]
@@ -15,7 +13,9 @@ def main():
         print_grid(my_grid)
         while not game_is_over(my_grid):
             # Player turn
-            select_space(my_grid, int(input("Choose the number of space to mark: ")), "O")
+            select_space(
+                my_grid, int(input("Choose the number of space to mark: ")), "O"
+            )
             # Computer turn
             if not game_is_over(my_grid):
                 select_space(my_grid, minimax(my_grid, True)[1], "X")
