@@ -1,3 +1,6 @@
+"""Game process functions"""
+
+
 def print_grid(grid: list) -> None:
     """
     Prints the grid with actual spaces
@@ -55,7 +58,7 @@ def available_moves(grid: list) -> list:
     moves = []
     for row in grid:
         for col in row:
-            if col != "X" and col != "O":
+            if col not in ["X", "O"]:
                 moves.append(int(col))
     return moves
 

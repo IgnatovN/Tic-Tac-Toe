@@ -1,6 +1,7 @@
+"""Implementation of AI algorithm"""
 from copy import deepcopy
 
-from utils import *
+from utils import game_is_over, evaluate_grid, available_moves, select_space
 
 
 def minimax(input_grid: list, is_maximizing: bool) -> list:

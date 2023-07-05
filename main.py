@@ -1,11 +1,13 @@
+"""Main game logic"""
 from minmax import minimax
-from utils import *
+from utils import print_grid, game_is_over, select_space, evaluate_grid
 
 # Initialize grid with coordinates
 my_grid = [["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"]]
 
 
 def main():
+    """Game launch"""
     order = input("Choose your turn order (1 or 2): ")
 
     # The game (player makes first move)
